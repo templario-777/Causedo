@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "causedo"
+version = "0.1.0"
+description = "Base local-first para un agente con auditoría y bóveda de secretos"
+readme = "README.md"
+requires-python = ">=3.10"
+
+[project.scripts]
+causedo = "causedo.cli:main"
+
+[tool.setuptools]
+packages = ["causedo"]
